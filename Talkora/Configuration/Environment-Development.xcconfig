@@ -1,0 +1,13 @@
+// Environment-Development.xcconfig
+// Values specific to the Development environment. Included by Debug-Development.xcconfig
+// and Release-Development.xcconfig alongside Debug.xcconfig / Release.xcconfig.
+
+PRODUCT_BUNDLE_IDENTIFIER = com.talkora.app.dev
+PRODUCT_NAME = Talkora Dev
+// The TALKORA_* values below reach Info.plist and are read at runtime by `AppEnvironment`.
+TALKORA_APP_DISPLAY_NAME = Talkora Dev
+TALKORA_ENVIRONMENT_NAME = development
+// `\/` escapes the slashes: a bare `//` would start an xcconfig comment and truncate the URL.
+TALKORA_API_BASE_URL = https:\/\/mock.dev.talkora.local
+TALKORA_ENABLE_LOGGING = YES
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-Dev

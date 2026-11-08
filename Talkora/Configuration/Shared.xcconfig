@@ -1,0 +1,19 @@
+// Shared.xcconfig
+// Settings common to every build configuration (all environments, Debug and Release).
+
+SDKROOT = iphoneos
+SUPPORTED_PLATFORMS = iphoneos iphonesimulator
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+SWIFT_VERSION = 5.0
+TARGETED_DEVICE_FAMILY = 1,2
+CODE_SIGN_STYLE = Automatic
+GENERATE_INFOPLIST_FILE = NO
+INFOPLIST_FILE = Talkora/Resources/Info.plist
+// Keep the Swift module name constant across environments even though PRODUCT_NAME
+// (the display name / .app bundle name) varies — @testable import Talkora must always resolve.
+PRODUCT_MODULE_NAME = Talkora
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor
+ENABLE_PREVIEWS = YES
+SWIFT_STRICT_CONCURRENCY = complete
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1

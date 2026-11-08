@@ -1,0 +1,5 @@
+Derived/
+*.xcworkspace
+*.xcodeproj
+.build/
+Tuist/.build/
